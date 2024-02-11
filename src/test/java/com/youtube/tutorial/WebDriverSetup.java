@@ -1,4 +1,4 @@
-package com.youtube.tutorial.testcommons;
+package com.youtube.tutorial;
 
 import java.io.FileInputStream;
 import java.io.IOException;

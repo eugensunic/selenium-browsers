@@ -1,6 +1,5 @@
-package com.youtube.tutorial.testcommons;
+package com.youtube.tutorial;
 
-import com.youtube.tutorial.SamplePage;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
