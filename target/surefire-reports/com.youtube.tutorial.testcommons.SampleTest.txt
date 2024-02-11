@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.youtube.tutorial.testcommons.SampleTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.612 s <<< FAILURE! - in com.youtube.tutorial.testcommons.SampleTest
+com.youtube.tutorial.testcommons.SampleTest.NavigateToLandingPageTest  Time elapsed: 1.595 s  <<< ERROR!
+org.openqa.selenium.remote.http.ConnectionFailedException: 
+Unable to establish websocket connection to http://localhost:52183/devtools/browser/3fc49b49-581f-4b7c-af4f-203fb9ed2dc2
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'ADC-MB30098', ip: 'fe80:0:0:0:802:f0f6:838:346e%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.3.1', java.version: '17.0.9'
+Driver info: driver.version: ChromeDriver
+	at com.youtube.tutorial.testcommons.SampleTest.NavigateToLandingPageTest(SampleTest.java:17)
+
