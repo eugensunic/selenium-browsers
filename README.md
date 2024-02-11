@@ -45,6 +45,7 @@ The project follows a standard Maven project structure:
 
 
 ## Download dependencies
+To install pom.xml dependencies
 ```sh
 mvn clean install
 ```
