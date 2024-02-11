@@ -55,3 +55,7 @@ To execute the Selenium tests, use the following Maven command:
 
 ```sh
 mvn test
+```
+## Chrome binary path for windows and Mac os:
+windows: C:/Program Files/Google/Chrome/Application/chrome.exe
+mac: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome

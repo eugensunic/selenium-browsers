@@ -29,26 +29,7 @@ public class WebDriverConfigurator {
     }
 
     protected void setupChromeOptions() {
-        String binary = System.getProperty("webdriver.chrome.binary", null);
         chromeOptions.addArguments("--remote-allow-origins=*");
-        if (binary != null) {
-            chromeOptions.setBinary(binary);
-        }
-
-        if (Boolean.parseBoolean(System.getProperty("headless", "false"))) {
-            throw new RuntimeException("Headless mode is not supported.");
-        }
-
-        chromeOptions.setExperimentalOption("prefs", Map.of("intl.accept_languages", "de-DE"));
-
-        if (!Boolean.parseBoolean(System.getProperty("ignoreProxySettings", "false"))) {
-            Proxy proxy = new Proxy();
-            String proxyHost = System.getProperty("webdriver.proxy.host");
-            proxy.setHttpProxy(proxyHost);
-            proxy.setSslProxy(proxyHost);
-            proxy.setNoProxy(System.getProperty("webdriver.proxy.noProxyList"));
-            chromeOptions.setCapability(CapabilityType.PROXY, proxy);
-        }
     }
 
     public WebDriver initializeWebDriver() {
